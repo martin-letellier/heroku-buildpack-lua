@@ -27,6 +27,7 @@ mkdir -p packages
 
 echo "-----> Copying lua to bin"
 cp "$OPT_DIR/$STACK/lua" "bin/"
+cp "$OPT_DIR/$STACK/luac" "bin/"
 
 echo "-----> Installing packages"
 
