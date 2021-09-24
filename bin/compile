@@ -38,7 +38,7 @@ if [ "$ENV" != "local" ]; then
   echo "site_config.LUA_INCDIR=[[$OPT_DIR/../include]]" >> $SITE_CONFIG
   echo "site_config.LUA_LIBDIR=[[$OPT_DIR/../lib/$STACK/]]" >> $SITE_CONFIG
 else
-  LUA=lua5.1
+  LUA=lua5.4
 fi
 
 # use sed because grep halts script with -e when there is no match

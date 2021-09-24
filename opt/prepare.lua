@@ -40,7 +40,7 @@ local rockspec = {
   name = "anonymous_app",
   dependencies = { }
 }
-setfenv(fn, rockspec)()
+if setfenv then setfenv(fn, rockspec) end
 local path = require("luarocks.path")
 local deps = require("luarocks.deps")
 local install = require("luarocks.install")
